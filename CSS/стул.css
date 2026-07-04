@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(141, 141, 141);
+}
+.hiro-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header{
+    min-height: 900px;
+    background-image: url(../img/lec.webp);
+    background-size: cover;
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.menu>li:first-child{
+    margin-right: auto;
+}
+.menu img{
+    width: 40px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+input{
+    border-radius: 13px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+}
+.btn{    
+    display: block;
+    background-color: rgb(128, 0, 128);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 16;
+    border: none;
+    text-align: center;
+    background-image:url(../img/Пипидастр.png);
+    transition: 300ms;
+    box-shadow: 0 5px 0 rgb(128, 0, 60);
+}
+.btnb{    
+    display: block;
+    background-color: rgb(128, 0, 100);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 16;
+    border: none;
+    background-image:url(../img/Пипидастр.png);
+    text-align: center;
+    transition: 300ms;
+    box-shadow: 0 5px 0 rgb(128, 0, 100);
+}
+.btna{
+    display: block;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.3);
+    padding: 8px 14px;
+    font-size: 16;
+    backdrop-filter: blur(2px);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    transition: 300ms;
+    box-shadow: 0 5px 0 rgb(123, 14, 131);
+}
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 0 rgb(234, 0, 255)
+}
+button:active{
+    transform: scale(1);
+    box-shadow: 0 0 0 rgb(58, 4, 62);
+}
+a:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 0 rgb(234, 0, 255)
+}
+a:active{
+    transform: scale(1);
+    box-shadow: 0 0 0 rgb(234, 0, 255);
+}
+h1{
+    font-size: 60px;
+    margin-top: 200px;
+}
+.hiro-section>p{
+    margin-block: 20px;
+    max-width: 500px;
+    line-height: 1.5;
+}
+.hiro-section>form{
+    border-color: white;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: fit-content;
+}
+.hiro-section>input{
+    border: none;
+    padding: 10px;
+}
+/* Начало осн main-а */
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.wrapper img{
+    margin-top: 10px;
+}
+.info{
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 20px;
+}
+.info img{
+    max-width: 600px;
+    border-radius: 15px;
+}
+.info p{
+    margin: 15px 0;
+    line-height: 1.5;
+}
+.cards{
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cards>h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.card{
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.card video{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.card>img{
+    width: 100%;
+    border-radius: 0;
+}
+.card__text{
+    padding: 10px;
+}
+address{
+    max-width: 1440px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-image:url(../img/1.png);
+}
+address a{
+    color: black;
+    backdrop-filter: blur(2px);
+}
+footer{
+    background-color: black;
+}
+
+@media(max-width: 1329px){
+    .wrapper img{
+        max-width: 100%;
+        order: -1;
+    }
+}
+@media(max-width: 559px){
+    .card{
+        width: 100%;
+    }
+
+    address{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+@media(max-width: 687px){
+    .hiro-section li{
+        width: 60px;
+        font-size: 12px;
+    }
+}
+@media(max-width: 517px){
+    .hiro-section li{
+        width: 50px;
+        font-size: 10px;
+    }
+}
+@media(max-width: 466px){
+    .hiro-section li{
+        width: 40px;
+        font-size: 9px;
+    }
+}
+@media(max-width: 426px){
+    .hiro-section li{
+        width: 30px;
+        font-size: 8px;
+    }
+}
+@media(max-width: 374px){
+    .hiro-section li{
+        width: 20px;
+        font-size: 7px;
+    }
+}
+@media(max-width: 323px){
+    .hiro-section li{
+        width: 10px;
+        font-size: 6px;
+    }
+}
+@media(max-width: 303px){
+    .hiro-section input{
+        width: 150px;
+    }
+    .hiro-section h1{
+        font-size: 40px;
+    }
+}
+@media(max-width: 281px){
+    .hiro-section input{
+        width: 100px;
+    }
+    /* .hiro-section h1{
+        font-size: 40px;
+    } */
+}
+@media(max-width: 271px){
+    .hiro-section li{
+        width: 5px;
+        font-size: 5px;
+    }
+}
+/* Под кнопочный телефон лол */
+@media(max-width: 240px){
+    .hiro-section li{
+        width: 3px;
+        font-size: 4px;
+    }
+    .hiro-section input{
+        width: 90px;
+    }
+    .hiro-section h1{
+        font-size: 30px;
+    }
+    .hiro-section li{
+        width: 3px;
+    }
+    .hiro-section{
+        padding: 10px;
+    }
+}
+    
