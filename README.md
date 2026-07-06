@@ -1,2 +1,2 @@
 # caitpipidastr
-https://github.com/petryhaklikuha/caitpipidastr
+https://petryhaklikuha.github.io/caitpipidastr
